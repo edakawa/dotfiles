@@ -14,8 +14,8 @@ _FG_COLOR=white
 _BG_COLOR=black
 
 #-------------------------------------------------------------------------------
-_US_FONT=Hermit:style=medium
-_JP_FONT=M+1P+IPAG:style=regular
+_US_FONT=Hermit:style=Regular
+_JP_FONT=M+2P+IPAG:style=regular
 
 fc-list | grep -q ${_US_FONT}
 [[ $? -eq 1 ]] && _US_FONT=""
@@ -32,3 +32,4 @@ pgrep -q xcompmgr
 #-------------------------------------------------------------------------------
 xterm -fa ${_US_FONT} -fd ${_JP_FONT} -fg ${_FG_COLOR} -bg ${_BG_COLOR} \
     -fs ${_FONT_SIZE} -title ${_TITLE} +sb -e "${_PROGRAM}"
+
